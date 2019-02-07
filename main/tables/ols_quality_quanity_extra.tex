@@ -1,0 +1,30 @@
+\begin{table}
+\caption{Regression table: Quality vs. Quantiy}
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+                                 & avg\_edit\_ratio I & avg\_edit\_ratio II & avg\_edit\_ratio III & avg\_edit\_ratio IIII  \\
+\midrule
+\midrule
+Intercept                        & 0.0344***          & 0.0329***           & 0.0348***            & 0.0271***              \\
+                                 & (0.0125)           & (0.0108)            & (0.0127)             & (0.0044)               \\
+counter\_real                    & -0.0006            & -0.0006             & -0.0007              & -0.0004**              \\
+                                 & (0.0004)           & (0.0005)            & (0.0005)             & (0.0002)               \\
+C(treatment)[T.10]               &                    & 0.0088              &                      & 0.0438                 \\
+                                 &                    & (0.0088)            &                      & (0.0447)               \\
+C(treatment)[T.11]               &                    & 0.0018              &                      & -0.0083                \\
+                                 &                    & (0.0027)            &                      & (0.0062)               \\
+C(treatment)[T.12]               &                    & -0.0027             &                      & -0.0089                \\
+                                 &                    & (0.0020)            &                      & (0.0069)               \\
+counter\_real:C(treatment)[T.10] &                    &                     & 0.0001               & -0.0014                \\
+                                 &                    &                     & (0.0001)             & (0.0015)               \\
+counter\_real:C(treatment)[T.11] &                    &                     & 0.0001               & 0.0004*                \\
+                                 &                    &                     & (0.0001)             & (0.0002)               \\
+counter\_real:C(treatment)[T.12] &                    &                     & -0.0001              & 0.0003                 \\
+                                 &                    &                     & (0.0001)             & (0.0002)               \\
+N                                & 396                & 396                 & 396                  & 396                    \\
+R2                               & 0.019              & 0.028               & 0.021                & 0.058                  \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
